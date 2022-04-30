@@ -1,0 +1,262 @@
+body {
+    margin: 0px;
+    background-color: rgba(173, 5, 167,0.1);
+}
+
+nav{
+    display:flex;
+    justify-content:space-around;
+    background-color: rgba(173, 5, 167,0.6);
+    padding:10px;
+}
+
+nav a{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    font-weight:200;
+    color:white;
+    background-color:rebeccapurple;
+    text-align:center;
+    border: solid 2px deepskyblue;
+    border-radius: 10px;
+    padding:2px;
+    text-decoration:none;
+}
+
+nav a:hover{
+    background-color:deepskyblue;
+}
+
+header {
+    background-image: url(sfondo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#overlay {
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:1;
+}
+
+header h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 5rem;
+    font-weight:bold;
+    color: white;
+    text-align: center;
+    width: 780px;
+    z-index: 2;
+}
+
+#profile{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#profile img{
+    height:100px;
+    border-radius:50px;
+    margin-top:-50px;
+    z-index:2;
+}
+
+#profile h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight:600;
+    color: black;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+#profile h4{
+    font-family: 'Smokum', cursive;
+    font-size: 2rem;
+    font-weight: 500;
+    color: mediumblue;
+    text-align: center;
+    margin:0px;
+}
+
+content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+content h2{
+    font-family: 'Rubik', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: rebeccapurple;
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom:0px;
+}
+
+content h4{
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    font-size: 1.75rem;
+    font-weight: 100;
+    color: mediumblue;
+    text-align: left;
+    margin-top:0px;
+    margin-bottom: 30px;
+}
+
+content p{
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: black;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+#introduction {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: black;
+    text-align:center;
+    line-height:150%;
+    width: 75%;
+    margin: 40px;
+}
+
+.car {
+    width: 75%;
+    margin-bottom:40px;
+}
+
+.car img{
+    width:100%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    background-color: rgba(173, 5, 167,0.6);
+    color:white;
+    height:80px;
+}
+
+footer h2{
+    font-family: 'Hurricane', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+    color: ghostwhite;
+    text-align: center;
+}
+
+.search{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.album {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(173, 5, 167,0.2);
+    border-radius: 5px;
+}
+
+.album div, .album a{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    background-color: rgba(173, 5, 167,0.1);
+    border-radius: 2px;
+    margin: 2px;
+    justify-content:center;
+}
+
+.album div:hover, .album a:hover{
+    background-color:white;
+    opacity: 0.6;
+}
+
+.album div img, .album a img{
+    width: 100%;
+}
+
+@media (max-width: 500px){
+    nav a{
+        font-size: 1.25rem;
+    }
+
+    header{
+        height: 250px;
+    }
+
+    header h1{
+        font-size: 2rem;
+        width: 450px;
+    }
+
+    #profile h2{
+        font-size: 1.5rem;
+    }
+
+    #profile h4{
+        font-size: 1.2rem;
+    }
+
+    content{
+        margin-top: 0px;
+    }
+
+    #introduction{
+        margin: 20px;
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    .car{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    content h2{
+        font-size: 1.5rem;
+        margin-top: 25px;
+    }
+
+    content h4{
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    content p{
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+
+    footer{
+        height: 45px;
+    }
+
+    footer h2{
+        font-size: 1.5rem;
+    }
+}
